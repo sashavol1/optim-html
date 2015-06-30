@@ -2,10 +2,7 @@
 
 var gulp = require("gulp"),
 		connect = require("gulp-connect"),
-    concatCss = require('gulp-concat-css'),
     less = require('gulp-less'),
-    rename = require('gulp-rename'),
-    minifyCss = require('gulp-minify-css'),
 		opn = require("opn");
 
 // Запускаем локальный сервер
@@ -34,9 +31,6 @@ gulp.task('html', function () {
 // Работа с CSS
 gulp.task('css', function () {
   gulp.src('app/css/*.css')
-  .pipe(concatCss("concat.css"))
-  .pipe(minifyCss(""))
-   .pipe(rename("concat.min.css"))
    .pipe(gulp.dest('app/css'))
     .pipe(connect.reload());
 });
