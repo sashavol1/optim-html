@@ -15,6 +15,26 @@
 	opacity: 1;
 }
 
+@font-face {
+	font-family: "mydriad";
+	src: url("fonts/MyriadProRegular.eot");
+	src: url("fonts/MyriadProRegular.eot?#iefix") format("embedded-opentype"),
+			 url("fonts/MyriadProRegular.woff") format("woff"),
+			 url("fonts/MyriadProRegular.ttf") format("truetype");
+	font-style: normal;
+	font-weight: normal;
+}
+
+@font-face {
+	font-family: "mydriad";
+	src: url("fonts/MyriadProItalic.eot");
+	src: url("fonts/MyriadProItalic.eot?#iefix") format("embedded-opentype"),
+			 url("fonts/MyriadProItalic.woff") format("woff"),
+			 url("fonts/MyriadProItalic.ttf") format("truetype");
+	font-style: italic;
+	font-weight: normal;
+}
+
 body input:focus:required:invalid,
 body textarea:focus:required:invalid {
 	
@@ -51,14 +71,42 @@ html.js .loader_inner {
 }
 
 body {
-	font-family: sans-serif;
-	font-size: 16px;
+	font-size: 18px;
+	color: #333;	 
+	font-weight: 200;
 	min-width: 320px;
 	position: relative;
-	line-height: 1.6;
-	font-family: "RobotoRegular", sans-serif;
+	line-height: 1.4;
+	font-family: "mydriad", sans-serif;
+	font-style: normal;
 	overflow-x: hidden;
 }
+
+h1,h2,h3,h4,h5,h6,p,ul {
+	padding:0;
+	margin:0;
+}
+
+h1 {
+	font-size: 24px;
+	font-weight: normal;	
+}
+
+h2 {
+	font-size: 18px;
+	font-weight: normal;
+}
+
+h3 {
+	font-size: 18px;
+	font-weight: normal;
+}
+
 .hidden {
 	display: none;
 }
+
+a, a:focus {
+	text-decoration: none;
+}
+

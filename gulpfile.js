@@ -30,8 +30,7 @@ gulp.task('html', function () {
 
 // Работа с CSS
 gulp.task('css', function () {
-  gulp.src('app/css/*.css')
-   .pipe(gulp.dest('app/css'))
+  gulp.src('app/css/*.css')   
     .pipe(connect.reload());
 });
 
