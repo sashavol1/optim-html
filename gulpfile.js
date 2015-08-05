@@ -2,7 +2,7 @@
 
 var gulp = require("gulp"),
 		connect = require("gulp-connect"),
-    less = require('gulp-less'),
+    less = require('gulp-less'), 
 		opn = require("opn");
 
 // Запускаем локальный сервер
@@ -30,7 +30,7 @@ gulp.task('html', function () {
 
 // Работа с CSS
 gulp.task('css', function () {
-  gulp.src('app/css/*.css')   
+  gulp.src('app/css/*.css')    
     .pipe(connect.reload());
 });
 
