@@ -14,26 +14,19 @@
 	color: #666;
 	opacity: 1;
 }
-
+ @font-face {
+  font-family: 'PT Sans';
+  font-style: normal;
+  src: url('pts55f_w.eot');
+  src: local('PT Sans'), url('../fonts/PTS55F_W.eot?#iefix') format('embedded-opentype'), url('../fonts/PTS55F_W.woff') format('woff'), url('../fonts/PTS55F_W.ttf') format('truetype'), url('../fonts/PTS55F_W.svg#PTSans-Regular') format('svg');
+} 
 @font-face {
-	font-family: "mydriad";
-	src: url("fonts/MyriadProRegular.eot");
-	src: url("fonts/MyriadProRegular.eot?#iefix") format("embedded-opentype"),
-			 url("fonts/MyriadProRegular.woff") format("woff"),
-			 url("fonts/MyriadProRegular.ttf") format("truetype");
-	font-style: normal;
-	font-weight: normal;
-}
-
-@font-face {
-	font-family: "mydriad";
-	src: url("fonts/MyriadProItalic.eot");
-	src: url("fonts/MyriadProItalic.eot?#iefix") format("embedded-opentype"),
-			 url("fonts/MyriadProItalic.woff") format("woff"),
-			 url("fonts/MyriadProItalic.ttf") format("truetype");
-	font-style: italic;
-	font-weight: normal;
-}
+  font-family: 'PT Sans';
+  src: url('pts75f_w.eot');
+  font-style: normal;
+  font-weight: bold;
+  src: local('PT Sans Bold'), url('../fonts/PTS75F_W.eot?#iefix') format('embedded-opentype'), url('../fonts/PTS75F_W.woff') format('woff'), url('../fonts/PTS75F_W.ttf') format('truetype'), url('../fonts/PTS75F_W.svg#PTSans-Bold') format('svg');
+} 
 
 body input:focus:required:invalid,
 body textarea:focus:required:invalid {
@@ -77,31 +70,12 @@ body {
 	min-width: 320px;
 	position: relative;
 	line-height: 1.4;
-	font-family: "mydriad", sans-serif;
+	font-family: "PT sans", sans-serif;
 	font-style: normal;
 	overflow-x: hidden;
 }
 
-h1,h2,h3,h4,h5,h6,p,ul {
-	padding:0;
-	margin:0;
-}
-
-h1 {
-	font-size: 24px;
-	font-weight: normal;	
-}
-
-h2 {
-	font-size: 18px;
-	font-weight: normal;
-}
-
-h3 {
-	font-size: 18px;
-	font-weight: normal;
-}
-
+ 
 .hidden {
 	display: none;
 }
@@ -109,13 +83,4 @@ h3 {
 a, a:focus {
 	text-decoration: none;
 }
-
-@font-face {
-	font-family: "RobotoRegular";
-	src: url("../fonts/RobotoRegular/RobotoRegular.eot");
-	src: url("../fonts/RobotoRegular/RobotoRegular.eot?#iefix") format("embedded-opentype"),
-			 url("../fonts/RobotoRegular/RobotoRegular.woff") format("woff"),
-			 url("../fonts/RobotoRegular/RobotoRegular.ttf") format("truetype");
-	font-style: normal;
-	font-weight: normal;
-}
+ 

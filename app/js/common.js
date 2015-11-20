@@ -1,3 +1,10 @@
+$(window).load(function() {
+
+	$(".loader_inner").fadeOut();
+	$(".loader").delay(400).fadeOut("slow");
+
+});
+
 $(document).ready(function() {
 
 	//Цели для Яндекс.Метрики и Google Analytics
@@ -45,9 +52,3 @@ $(document).ready(function() {
 	
 });
 
-$(window).load(function() {
-
-	$(".loader_inner").fadeOut();
-	$(".loader").delay(400).fadeOut("slow");
-
-});
